@@ -14,11 +14,18 @@
 <body>
     <div class="top-bar">
       <div class="container">
-        <a class="logo" href="/">Rescue Mission</a>
+        <a class="logo" href="/questions">Rescue Mission</a>
 
       </div>
     </div>
-
+    <% if flash.any? %>
+      <div class="flash">
+        <div class="container">
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
+        </div>
+      </div>
+    <% end %>
     <div class="container">
       <%= yield %>
     </div>
