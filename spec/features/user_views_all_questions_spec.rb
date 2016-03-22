@@ -1,14 +1,14 @@
 require 'rails_helper'
+=begin
+As a user
+I want to view recently posted questions
+So that I can help others
 
-# As a user
-# I want to view recently posted questions
-# So that I can help others
+Acceptance Criteria
 
-# Acceptance Criteria
-
-# - I must see the title of each question
-# - I must see questions listed in order, most recently posted first
-
+- I must see the title of each question
+- I must see questions listed in order, most recently posted first
+=end
 feature 'all questions are listed on index page' do
   scenario 'user views index page of questions' do
     Question.create(title: "How do I do the derp?", description: "I really want to know what 'derp' means and how one does it. It is just a simple error? Do I make an easy mistake? Why is it often 'Derp' and used as a name? I don't understand that meme at all, guys. HALP.")

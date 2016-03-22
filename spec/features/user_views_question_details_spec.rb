@@ -1,14 +1,16 @@
 require 'rails_helper'
 
-# As a user
-# I want to view a question's details
-# So that I can effectively understand the question
-#
-# Acceptance Criteria
-#
-# - I must be able to get to this page from the questions index
-# - I must see the question's title
-# - I must see the question's description
+=begin
+As a user
+I want to view a question's details
+So that I can effectively understand the question
+
+Acceptance Criteria
+
+- I must be able to get to this page from the questions index
+- I must see the question's title
+- I must see the question's description
+=end
 
 feature 'view question details' do
   scenario 'user views question details' do

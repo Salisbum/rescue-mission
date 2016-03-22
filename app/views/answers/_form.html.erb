@@ -1,0 +1,5 @@
+<%= form_for [@question, @answer] do |f| %>
+  <%= f.label :description, "Answer" %>:
+  <%= f.text_field :description %>
+  <%= f.submit "Submit Answer" %>
+<% end %>

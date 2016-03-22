@@ -11,5 +11,14 @@
       <h2>Description:</h2>
       <%= @question.description %>
     </p>
+    <br><br>
+<%= render './answers/form' %>
+    <br><br>
+    <h2>Answers:</h2>
+    <% @answers.each do |answer| %>
+    <li>
+      <%= answer.description %>
+    </li>
+    <% end %>
   </body>
 </html>
