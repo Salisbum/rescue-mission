@@ -5,6 +5,7 @@
     <title>Question Queue</title>
   </head>
   <body>
+    <%= will_paginate @questions %>
     <% @questions.each do |question| %>
     <li><%= question.title %></li>
     <br>
