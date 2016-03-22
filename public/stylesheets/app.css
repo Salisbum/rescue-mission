@@ -1,12 +1,12 @@
 
-body {
+/*body {
   background-image: url('/images/stardust.png');
   color: #FFFFFF;
-}
+}*/
 
 a,
 a:visited {
-  color: #FFFFFF;
+  color: #3B9089;
   text-decoration: none;
 }
 
@@ -15,9 +15,9 @@ a:visited {
   margin: 0 auto;
 }
 
-.top-bar {
+/*.top-bar {
   background-color: #3C3C3C;
-}
+}*/
 
 .top-bar-section {
   display: inline-block;

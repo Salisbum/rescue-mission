@@ -5,8 +5,9 @@
     <title>Question Queue</title>
   </head>
   <body>
-    <%= @questions.each do |question| %>
-    <%= question.title %>
+    <% @questions.each do |question| %>
+    <li><%= question.title %></li>
+    <br>
     <% end %>
   </body>
 </html>
