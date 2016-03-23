@@ -13,7 +13,7 @@
     <%= button_to "Delete", question_path(@question), method: :delete %>
     <p>
       <h2>Description:</h2>
-      <%= @question.description %>
+      <%= markdown(@question.description) %>
     </p>
     <br><br>
 <%= render './answers/form' %>
@@ -21,7 +21,7 @@
     <h2>Answers:</h2>
     <% @answers.each do |answer| %>
     <li>
-      <%= answer.description %>
+      <%= markdown(answer.description) %>
     </li>
     <% end %>
   </body>

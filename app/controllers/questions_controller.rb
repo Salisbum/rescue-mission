@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
     @question = Question.find(params[:id])
     @answers = @question.answers.order(created_at: :asc)
     @answer = Answer.new
@@ -46,7 +47,7 @@ class QuestionsController < ApplicationController
       @answers.each do |answer|
         answer.destroy!
       end
-      
+
       flash[:notice] = "Question deleted!"
     end
     redirect_to questions_path
