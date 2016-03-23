@@ -40,11 +40,18 @@ q_beer = Question.create(title: "How do I choose a tasty beer?", description: "D
 
 q_egg = Question.create(title: "What's the best way to eat a mini-egg?", description: "I've been told that there are certain ways one should enjoy the once-a-year seasonal treat that is cadbury mini-eggs? Do you people freeze them? Melt them?", user: creator_2)
 
-Answer.create(description: "You should freeze them.", user: creator_3, question: q_egg)
-Answer.create(description: "ALL THE IPA's", user: creator_2, question: q_beer)
-Answer.create(description: "Buy pb. Buy jelly. Slather on bread. Smoosh.", user: creator_1, question: q_pb)
-Answer.create(description: "Herp is a subgenre of derp.", user: creator_3, question: q_herp)
+Answer.create(description: "You should freeze them. Because freezing candy makes everything better. Honestly. Do it next halloween. You'll thank me.", user: creator_3, question: q_egg)
+
+Answer.create(description: "ALL THE IPA's. Because IPA's are the shit. Everyone should love them. Seriously. What's wrong with you if you don't like IPAs.", user: creator_2, question: q_beer)
+
+Answer.create(description: "Buy pb. Buy jelly. Slather on bread. Smoosh. That's a loooove sandwich, pb&j. Strawberry is the classic jelly of choice, here.", user: creator_1, question: q_pb)
+
+Answer.create(description: "Herp is a subgenre of derp. Functionally the same, mostly. I mean, there are specific use cases that you should know about, but you'll run into them. Google it!", user: creator_3, question: q_herp)
+
 Answer.create(description: "To Derp is to make a silly mistake. A Derp is a person who consistently derps. Derp is a meme representative of these situations.", user: creator_2, question: q_derp)
-Answer.create(description: "MELT THEEEMMM", user: creator_1, question: q_egg)
-Answer.create(description: "Drink whatever you like, man.", user: creator_3, question: q_beer)
-Answer.create(description: "Make sure the pb and jelly is organic, or else you'll die.", user: creator_2, question: q_pb)
+
+Answer.create(description: "MELT THEEEMMM. Actually no, wait, don't, that's gross. Melted chocolate is horrible. Also, I'm not sure that you even can given the hard candy shell.", user: creator_1, question: q_egg)
+
+Answer.create(description: "Drink whatever you like, man. don't let nobody tell you what to do. if you want to drink bud, then drink bud. though it doesn't hurt to see what else you like.", user: creator_3, question: q_beer)
+
+Answer.create(description: "Make sure the pb and jelly is organic, or else you'll die. lol jk.", user: creator_2, question: q_pb)

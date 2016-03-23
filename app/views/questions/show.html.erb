@@ -6,7 +6,11 @@
   </head>
   <body>
     <h1><%= @question.title %></h1>
-
+    <br><br>
+    <%= link_to 'Edit Question', edit_question_path(@question) %>
+    <br>
+    <br>
+    <%= button_to "Delete", question_path(@question), method: :delete %>
     <p>
       <h2>Description:</h2>
       <%= @question.description %>
