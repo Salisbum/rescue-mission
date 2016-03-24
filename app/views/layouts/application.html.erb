@@ -14,21 +14,24 @@
 <body>
     <div class="top-bar">
       <div class="container">
-        <a class="logo" href="/">Rescue Mission</a>
+        <a class="logo" href="/questions">Rescue Mission</a>
 
-        <ul class="top-bar-section">
-          <% if current_user %>
-            <li>Signed in as <%= current_user.username %></a></li>
-            <li><a href="/sign_out">Sign Out</a></li>
-          <% else %>
-            <li><a href="/auth/github">Sign In</a></li>
-          <% end %>
-        </ul>
       </div>
     </div>
-
+    <% if flash.any? %>
+      <div class="flash">
+        <div class="container">
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
+        </div>
+      </div>
+    <% end %>
     <div class="container">
-      <%= yield %>
-    </div>
+   <div class="row">
+     <div class="column">
+       <%= yield %>
+     </div>
+   </div>
+ </div>
   </body>
 </html>

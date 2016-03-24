@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'omniauth-github'
+gem 'redcarpet'
 gem 'will_paginate', '~> 3.0.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -33,7 +34,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry'
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'factory_girl'
 end
 
 group :development do

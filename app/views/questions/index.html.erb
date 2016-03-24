@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question Queue</title>
+  </head>
+  <body>
+    <%= link_to "New Question", new_question_path %>
+    <br><br>
+    <%= will_paginate @questions %>
+    <br><br>
+    <% @questions.each do |question| %>
+    <li><%= link_to question.title, question %></li>
+    <br>
+    <% end %>
+  </body>
+</html>

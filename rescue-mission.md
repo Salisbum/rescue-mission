@@ -272,3 +272,10 @@ Acceptance Criteria
 [rails-requests]: https://learn.launchacademy.com/lessons/rails-requests
 [rails-forms]: https://learn.launchacademy.com/lessons/rails-forms
 [rails-nested-resources]: https://learn.launchacademy.com/lessons/rails-nested-resources
+
+
+###
+Gem omniauth
+gem omniauth Facebook
+register application, get key and secret
+in user model,  self omniauth method for facebook auth.provider and auth.uid

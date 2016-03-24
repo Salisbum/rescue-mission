@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question: <%= @question.id %></title>
+  </head>
+  <body>
+    <h1><%= @question.title %></h1>
+    <br><br>
+    <%= link_to 'Edit Question', edit_question_path(@question) %>
+    <br>
+    <br>
+    <%= button_to "Delete", question_path(@question), method: :delete %>
+    <p>
+      <h2>Description:</h2>
+      <%= markdown(@question.description) %>
+    </p>
+    <br><br>
+<%= render './answers/form' %>
+    <br><br>
+    <h2>Answers:</h2>
+    <% @answers.each do |answer| %>
+    <li>
+      <%= markdown(answer.description) %>
+    </li>
+    <% end %>
+  </body>
+</html>
