@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>RescueMission</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/stylesheets/normalize.css" />
-  <link rel="stylesheet" href="/stylesheets/app.css" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <title><%= content_for?(:title) ? yield(:title) : "Rescue Mission" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
     <div class="top-bar">
       <div class="container">
         <a class="logo" href="/questions">Rescue Mission</a>

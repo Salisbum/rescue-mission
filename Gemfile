@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'omniauth-github'
 gem 'redcarpet'
 gem 'will_paginate', '~> 3.0.6'
+gem 'foundation-rails'
+gem 'foundation-will_paginate'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record

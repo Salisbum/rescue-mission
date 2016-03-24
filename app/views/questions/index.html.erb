@@ -7,7 +7,7 @@
   <body>
     <%= link_to "New Question", new_question_path %>
     <br><br>
-    <%= will_paginate @questions %>
+    <%= foundation_paginate @questions %>
     <br><br>
     <% @questions.each do |question| %>
     <li><%= link_to question.title, question %></li>
