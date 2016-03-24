@@ -20,7 +20,7 @@ class QuestionsController < ApplicationController
       flash[:notice] = "Question created!"
       redirect_to questions_path
     else
-      flash[:alert] = "Question not created!"
+      flash[:alert] = "Question not created! #{@question.errors.full_messages.join ","}."
       render :new
     end
   end
@@ -30,10 +30,13 @@ class QuestionsController < ApplicationController
   end
 
   def update
+    #add error message
     @question = Question.find(params[:id])
     if @question.update(question_params)
+      flash[:notice] = "Question saved!"
       redirect_to question_path(@question)
     else
+      flash[:alert] = "Question not saved! #{@question.errors.full_messages.join ","}."
       render :edit
     end
   end

@@ -10,7 +10,7 @@ class AnswersController < ApplicationController
       flash[:notice] = 'Answer successfully submitted!'
       redirect_to question_path(@question)
     else
-      flash[:alert] = "Answer was not saved!"
+      flash[:alert] = "Answer was not saved! #{@answer.errors.full_messages.join ","}."
       render :'questions/show'
     end
   end
